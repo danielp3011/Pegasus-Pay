@@ -13,7 +13,7 @@ export class PaymentPage {
           // this.navCtrl.popToRoot();
           // might try this instead
           this.navCtrl.setRoot(SuccessPage);
-      }, 2000);
+      }, 1000);
   }
 
 }
