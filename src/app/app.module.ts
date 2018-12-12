@@ -12,6 +12,7 @@ import { PaymentPage } from '../pages/payment/payment';
 import { SuccessPage } from '../pages/success/success';
 import { TopupPage } from '../pages/topup/topup';
 import { NewHomePage } from '../pages/new_home/new_home';
+import { NfcReaderTestPage } from '../pages/nfc-reader-test/nfc-reader-test';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -27,6 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PaymentPage,
     SuccessPage,
     NewHomePage,
+    NfcReaderTestPage,
     TopupPage,
     TabsPage
   ],
@@ -43,6 +45,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     PaymentPage,
     SuccessPage,
+    NfcReaderTestPage,
     TopupPage,
     NewHomePage,
     TabsPage
