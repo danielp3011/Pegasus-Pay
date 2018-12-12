@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { PaymentPage } from '../payment/payment';
+import { NfcReaderTestPage } from '../nfc-reader-test/nfc-reader-test';
 import { TopupPage } from '../topup/topup';
 
 @Component({
@@ -11,6 +12,7 @@ import { TopupPage } from '../topup/topup';
 export class HomePage {
   YourFancyButton: any;
   YourFancyTopup: any;
+  NfcReaderButton: any;
   money: any;
 
   payPage = PaymentPage;
@@ -18,6 +20,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, public storage: Storage) {
     this.YourFancyButton = PaymentPage;
     this.YourFancyTopup = TopupPage;
+    this.NfcReaderButton = NfcReaderTestPage;
     this.storage = storage;
     try{
       this.storage.get('money');
