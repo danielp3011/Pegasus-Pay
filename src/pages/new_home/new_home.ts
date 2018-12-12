@@ -3,8 +3,8 @@ import { NavController } from 'ionic-angular';
 import { PaymentPage } from '../payment/payment';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-new_home',
+  templateUrl: 'new_home.html'
 })
 export class HomePage {
   YourFancyButton: any;
