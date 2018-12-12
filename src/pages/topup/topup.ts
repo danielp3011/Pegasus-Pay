@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Storage } from '@ionic/storage';
+import { HomePage } from '../../pages/home/home';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -7,9 +8,11 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'topup.html'
 })
 export class TopupPage {
+  nav: NavController
 
   constructor(public navCtrl: NavController, public storage: Storage) {
     this.storage = storage;
+    this.nav = navCtrl;
   }
 
   public TopUp10() {
@@ -42,7 +45,7 @@ export class TopupPage {
 
   public done() {
     console.log("Done!");
-    alert("Done!");
+    this.nav.push(HomePage);
   }
 
 }
