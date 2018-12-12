@@ -42,6 +42,7 @@ export class TopupPage {
 
   public done() {
     console.log("Done!");
+    alert("Done!");
   }
 
 }
