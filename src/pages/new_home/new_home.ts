@@ -6,7 +6,7 @@ import { PaymentPage } from '../payment/payment';
   selector: 'page-new_home',
   templateUrl: 'new_home.html'
 })
-export class HomePage {
+export class NewHomePage {
   YourFancyButton: any;
 
   payPage = PaymentPage;

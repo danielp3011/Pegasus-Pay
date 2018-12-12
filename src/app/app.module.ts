@@ -3,10 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { IonicStorageModule } from '@ionic/storage';
+
+
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { PaymentPage } from '../pages/payment/payment';
 import { SuccessPage } from '../pages/success/success';
+import { TopupPage } from '../pages/topup/topup';
+import { NewHomePage } from '../pages/new_home/new_home';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -21,11 +26,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     PaymentPage,
     SuccessPage,
+    NewHomePage,
+    TopupPage,
     TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,6 +43,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     PaymentPage,
     SuccessPage,
+    TopupPage,
+    NewHomePage,
     TabsPage
   ],
   providers: [
