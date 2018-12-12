@@ -15,28 +15,28 @@ export class TopupPage {
   public TopUp10() {
     this.storage.get('money').then((val) => {
       this.storage.set('money', val+1000);
-      done();
+      this.done();
     });
   }
 
   public TopUp20() {
     this.storage.get('money').then((val) => {
       this.storage.set('money', val+2000);
-      done();
+      this.done();
     });
   }
 
   public TopUp30() {
     this.storage.get('money').then((val) => {
       this.storage.set('money', val+3000);
-      done();
+      this.done();
     });
   }
 
   public TopUp50() {
     this.storage.get('money').then((val) => {
       this.storage.set('money', val+5000);
-      done();
+      this.done();
     });
   }
 
